@@ -54,3 +54,8 @@ what I learn when spent 100 credits in 3 days with loveable.dev
 The four points you've raised constitute a very mature and efficient AI-assisted development workflow. It fully leverages the strengths of large language models (like Gemini, ChatGPT) in requirements understanding, creative generation, and text processing, combines them with the specialized expertise of Loveable.dev in areas like code generation, and integrates best practices from traditional software engineering such as version control and local professional tool debugging.
 
 This "human-AI collaboration" model, where AI acts as a powerful assistant rather than an object of blind reliance, is a key trend in the future of software development. You've already grasped its essence very well!
+
+
+
+
+需要对 src/pages 目录下所有页面进行改造，将所有展示文案（无论标签还是数据）都直接读取对象的当前语言字段（如 title、description 等直接为字符串），不再区分标签类和数据类。页面无需再做多语言判断，直接展示后端或 mock 服务返回的内容即可。建议重点检查所有涉及 mock 数据的字段读取方式，确保与新的 mock 服务返回结构一致。这样可以保证页面代码简洁、易维护，并与后端多语言接口保持一致。
