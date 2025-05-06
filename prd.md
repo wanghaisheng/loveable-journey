@@ -1,57 +1,165 @@
-# PRD: WebSim Vibe Coding Starter
+# Loveable.dev 使用经验分享网站 PRD
 
-## 1. 项目背景与目标
-- 目标：打造一个极致自动化、SEO 友好、支持多语言、可一键部署的现代 SaaS 网站生成器。
-- 用户：希望快速上线高质量网站的开发者、创业团队、内容创作者。
-- 痛点：传统建站繁琐，SEO 难以自动化，多语言和内容管理复杂，缺乏一站式自动部署。
+## 1. 项目概述
 
-## 2. 核心功能
-- **AI 研究与需求分析**：集成 Grok.com，自动挖掘用户痛点、竞品分析。
-- **PRD 生成**：集成 Google AI Studio，根据用户输入与调研自动生成详细产品需求文档（PRD.md）。
-- **代码与内容生成**：集成 WebSim.com，结合 PRD.md 和 prompt 模板自动生成完整 HTML/CSS/JS 站点。
-- **SEO 自动化**：自动生成 sitemap、robots.txt，集成 IndexNow、Bing、Google Search Console API，自动提交和校验。
-- **多语言支持**：locale 目录自动生成中英文等多语言 JSON 资源，支持动态切换。
-- **Playground 互动区**：多步骤标签页，支持嵌入第三方工具、输入输出流转。
-- **一键部署**：支持 Cloudflare Pages、GitHub Pages 等静态托管，自动化 CI/CD。
+### 1.1 项目背景
+本项目旨在分享使用Loveable.dev平台的经验和最佳实践，帮助其他开发者更有效地使用AI辅助开发工具。
 
-## 3. 用户流程
-1. **Grok.com 研究用户痛点** —— 复制调研结果。
-2. **Google AI Studio 生成 PRD.md** —— 粘贴调研内容，输出详细需求文档。
-3. **WebSim.com 生成站点** —— 粘贴 PRD.md 与 prompt 模板，自动生成 html 文件。
-4. **本地配置与部署** —— 将文件放入根目录，配置 config.json，连接 Cloudflare，git push 即可上线。
+### 1.2 项目目标
+- 分享使用100个credits在3天内获得的实践经验
+- 提供可操作的最佳实践建议
+- 建立AI辅助开发的社区资源
 
-## 4. 关键页面与模块
-- 首页（index.html）：产品介绍、功能亮点、Playground 互动区、案例展示、未来愿景。
-- about.html、career.html：团队与招聘信息。
-- Playground：多步骤标签页，嵌入 Grok、Google AI Studio、WebSim。
-- locale/：多语言资源。
-- docs/prompts/：各类 prompt 模板。
+## 2. 用户需求
 
-## 5. 技术与集成
-- 前端：HTML5、CSS3、GSAP 动画、响应式设计、SVG 插画。
-- 后端/自动化脚本：Python（requests）、GitHub Actions。
-- 第三方 API：Grok.com、Google AI Studio、WebSim.com、Cloudflare Pages、IndexNow、Bing、Google Search Console。
+### 2.1 目标用户
+- 使用Loveable.dev的开发者
+- 对AI辅助开发感兴趣的开发者
+- 寻找开发效率提升方案的团队
 
-## 6. SEO 及最佳实践
-- 语义化 HTML、H1-H6、alt 标签、meta 优化。
-- 自动 sitemap/robots.txt、自动提交索引。
-- 避免 GSC 常见错误，详细见 docs/gsc-common-mistakes.md。
+### 2.2 用户痛点
+- AI工具使用效率不高
+- 缺乏系统性的使用策略
+- 需要更多实践经验和最佳实践
 
-## 7. 交互与视觉
-- 大胆创意、现代 SaaS 风格，卡片式布局。
-- 多步骤 Tab、动画切换、极致响应式。
-- 真实用户头像与 SVG 插画混用。
+## 3. 功能需求
 
-## 8. 未来拓展
-- 支持更多第三方 API（如 Notion、Figma、Midjourney 等）。
-- 支持自定义主题与 UI 组件市场。
-- 智能内容更新与 A/B 测试。
+### 3.1 核心功能模块
 
-## 9. AI Scraper 友好特性
-- 内置支持主流 AI 爬虫（如 GPTBot、anthropic-ai、Amazonbot、Bytespider 等）友好的 robots.txt 自动生成，自动区分普通搜索引擎与 AI Scraper。
-- 支持自动生成 llms.txt/llms-full.txt，向 AI 爬虫清晰传递网站结构、内容分类、页面说明及最新动态，提升 AI 搜索与索引的友好度与曝光。
-- robots.txt、llms.txt 规则可自动根据 config 和 ai-robots.txt 列表扩展维护，适配未来更多 AI 相关标准。
+#### 3.1.1 经验分享模块
+- 展示4个核心策略
+  - PRD创建策略
+  - 设计语言定义
+  - Mock数据使用
+  - 调试工作流设置
+- 每个策略包含：
+  - 策略说明
+  - 工作原理
+  - 实践建议
 
----
+#### 3.1.2 提示词分享模块
+- 展示实用的Loveable.dev提示词
+- 支持提示词复制功能
+- 支持展开查看完整提示词
+- 支持查看所有提示词
 
-> 本 PRD.md 可作为自动化站点生成与团队协作的蓝本，适用于 WebSim Vibe Coding Starter 及其衍生项目。
+#### 3.1.3 额外提示模块
+- 模态框展示额外提示
+- 支持关闭功能
+
+### 3.2 页面结构
+- 头部：标题和副标题
+- 主体内容：
+  - 介绍部分
+  - 策略卡片部分
+  - 结论部分
+  - 提示词部分
+- 页脚：版权信息和GitHub链接
+
+## 4. 技术需求
+
+### 4.1 前端技术栈
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome 图标
+- Google Fonts (Inter字体)
+
+### 4.2 响应式设计
+- 支持移动端和桌面端
+- 使用flex和grid布局
+- 适配不同屏幕尺寸
+
+### 4.3 交互功能
+- 提示词复制功能
+- 模态框显示/隐藏
+- 提示词展开/收起
+
+## 5. 设计规范
+
+### 5.1 视觉设计
+- 字体：Inter (300-700权重)
+- 图标：Font Awesome 6.4.0
+- 布局：卡片式设计
+- 间距：统一的padding和margin
+
+### 5.2 交互设计
+- 按钮悬停效果
+- 卡片阴影效果
+- 平滑的动画过渡
+
+## 6. 内容需求
+
+### 6.1 核心策略内容
+1. PRD创建策略
+   - 使用Gemini/ChatGPT组织思路
+   - 创建详细的产品需求文档
+   - 转换为任务列表
+
+2. 设计语言定义
+   - 使用AI工具输出设计语言
+   - 调整默认设计风格
+   - 确保品牌一致性
+
+3. Mock数据使用
+   - 在需求中融入Mock数据
+   - 使用JSON文件作为数据源
+   - 使用Mockoon或JSON Server工具
+
+4. 调试工作流
+   - GitHub同步
+   - 本地代码克隆
+   - 使用Cursor/Tree-sitter调试
+
+### 6.2 提示词内容
+- i18n+React提示词
+- 数据和布局分离提示词
+- 其他实用提示词
+
+## 7. 性能需求
+
+### 7.1 加载性能
+- 页面加载时间<3秒
+- 图片优化
+- 代码压缩
+
+### 7.2 交互性能
+- 按钮响应时间<100ms
+- 动画流畅度60fps
+- 无卡顿现象
+
+## 8. SEO需求
+
+### 8.1 基础SEO
+- 合适的meta标签
+- 语义化HTML结构
+- 清晰的URL结构
+
+### 8.2 内容SEO
+- 关键词优化
+- 内容结构化
+- 内部链接优化
+
+## 9. 维护计划
+
+### 9.1 内容更新
+- 定期更新提示词库
+- 添加新的使用策略
+- 更新最佳实践
+
+### 9.2 技术维护
+- 定期更新依赖
+- 性能监控
+- 错误修复
+
+## 10. 成功指标
+
+### 10.1 用户指标
+- 页面访问量
+- 提示词使用次数
+- 用户停留时间
+
+### 10.2 技术指标
+- 页面加载速度
+- 错误率
+- 用户满意度

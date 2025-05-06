@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "Next.js Full Stack Developer",
+  "description": "We're looking for a passionate full-stack developer to join our innovative team.",
+  "datePosted": "2024-01-01",
+  "validThrough": "2024-12-31",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Mood Island Team",
+    "url": "https://loveablejourney.borninsea.com"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Remote"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 80000,
+      "maxValue": 120000,
+      "unitText": "YEAR"
+    }
+  },
+  "requirements": [
+    "3+ years experience with React and Next.js",
+    "Strong understanding of TypeScript",
+    "Experience with Node.js and API development",
+    "Familiarity with cloud services (AWS/GCP/Azure)",
+    "Strong problem-solving skills"
+  ],
+  "responsibilities": [
+    "Develop and maintain Next.js applications",
+    "Build scalable backend services",
+    "Collaborate with team members",
+    "Write clean, maintainable code",
+    "Participate in code reviews"
+  ],
+  "benefits": [
+    "Competitive salary",
+    "Flexible working hours",
+    "Remote work",
+    "Learning budget",
+    "Health insurance"
+  ],
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "contactType": "recruiter",
+    "email": "careers@loveablejourney.borninsea.com"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://loveablejourney.borninsea.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Careers",
+        "item": "https://loveablejourney.borninsea.com/career"
+      }
+    ]
+  },
+  "inLanguage": "en"
+} 

@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What I Learned Using 100 Credits on Loveable.dev in 3 Days",
+  "description": "Lessons learned from using 100 credits on Loveable.dev in just 3 days - effective strategies for AI-assisted development",
+  "image": "https://loveablejourney.borninsea.com/prompt-data-layout.png",
+  "author": {
+    "@type": "Organization",
+    "name": "Mood Island Team",
+    "url": "https://loveablejourney.borninsea.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mood Island Team",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://loveablejourney.borninsea.com/favicon.png"
+    }
+  },
+  "datePublished": "2024-01-01",
+  "dateModified": "2024-01-01",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://loveablejourney.borninsea.com"
+  },
+  "keywords": "Loveable.dev, AI development, ChatGPT, Gemini, software development, mock data, PRD, design language",
+  "inLanguage": "en"
+} 

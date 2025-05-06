@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Mood Island Team",
+  "url": "https://loveablejourney.borninsea.com",
+  "logo": "https://loveablejourney.borninsea.com/favicon.png",
+  "description": "A team dedicated to sharing AI development experiences and best practices",
+  "sameAs": [
+    "https://github.com/wanghaisheng/loveable-journey"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "support@loveablejourney.borninsea.com",
+    "availableLanguage": ["English", "Chinese"]
+  }
+} 

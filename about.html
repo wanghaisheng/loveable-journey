@@ -14,43 +14,12 @@
     
     <!-- Add favicon -->
     <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
-    <title>About Our Team</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            padding: 2rem;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .team-section {
-            margin-top: 2rem;
-        }
-
-        .values {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .value-card {
-            padding: 1.5rem;
-            background: #f8f9fa;
-            border-radius: 4px;
-        }
-
-        h1, h2 { color: #333; }
-    </style>
+    <title>About Our Team - Mood Island</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://websimstarter.borninsea.com/"},{"@type":"ListItem","position":2,"name":"About","item":"https://websimstarter.borninsea.com/about"}],"language":"en"}
 </script>
@@ -63,36 +32,116 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"Mood Island Team","url":"https://example.com/about","description":"A small, dedicated team passionate about creating innovative web solutions.","inLanguage":"en","publisher":{"@type":"Organization","name":"Mood Island Team"}}
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Our Team",
+  "description": "Learn about our small but passionate team building innovative web solutions",
+  "url": "https://loveablejourney.borninsea.com/about",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Mood Island Team",
+    "description": "A small, dedicated team passionate about creating innovative web solutions",
+    "foundingDate": "2023",
+    "url": "https://loveablejourney.borninsea.com",
+    "sameAs": [
+      "https://github.com/wanghaisheng/loveable-journey"
+    ]
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://loveablejourney.borninsea.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://loveablejourney.borninsea.com/about"
+      }
+    ]
+  },
+  "inLanguage": "en"
+} 
+</script>
 </head>
 <body>
-    <div class="container">
-        <h1>About Us</h1>
-        <p>We're a small, dedicated team passionate about creating innovative web solutions. Our focus is on building tools and experiences that make the web more accessible and enjoyable.</p>
-
-        <div class="team-section">
-            <h2>Our Story</h2>
-            <p>Started in 2023, we've been working on creating tools that help developers and designers build better web experiences. Our team combines expertise in modern web technologies with a deep understanding of user needs.</p>
-        </div>
-
-        <div class="values">
-            <div class="value-card">
-                <h3>Innovation</h3>
-                <p>We constantly explore new technologies and approaches to solve complex problems.</p>
-            </div>
-            <div class="value-card">
-                <h3>Quality</h3>
-                <p>We believe in writing clean, maintainable code and creating polished user experiences.</p>
-            </div>
-            <div class="value-card">
-                <h3>Collaboration</h3>
-                <p>We work closely together and value open communication and shared knowledge.</p>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>About Our Team</h1>
+                <p class="subtitle">A small, dedicated team passionate about creating innovative web solutions</p>
             </div>
         </div>
+    </header>
 
-        <div class="team-section">
-            <h2>Join Us</h2>
-            <p>We're always looking for talented individuals to join our team. Check out our <a href="/career">careers page</a> for current opportunities.</p>
+    <main>
+        <div class="container">
+            <section class="intro">
+                <p>We're a small, dedicated team passionate about creating innovative web solutions. Our focus is on building tools and experiences that make the web more accessible and enjoyable.</p>
+            </section>
+
+            <section class="team-section">
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <h2>Our Story</h2>
+                        <div class="strategy-details">
+                            <p>Started in 2023, we've been working on creating tools that help developers and designers build better web experiences. Our team combines expertise in modern web technologies with a deep understanding of user needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="values">
+                    <div class="strategy-card">
+                        <div class="strategy-content">
+                            <h2>Our Values</h2>
+                            <div class="strategy-details">
+                                <div class="value-item">
+                                    <h3>Innovation</h3>
+                                    <p>We constantly explore new technologies and approaches to solve complex problems.</p>
+                                </div>
+                                <div class="value-item">
+                                    <h3>Quality</h3>
+                                    <p>We believe in writing clean, maintainable code and creating polished user experiences.</p>
+                                </div>
+                                <div class="value-item">
+                                    <h3>Collaboration</h3>
+                                    <p>We work closely together and value open communication and shared knowledge.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="join-section">
+                <div class="strategy-card">
+                    <div class="strategy-content">
+                        <h2>Join Us</h2>
+                        <div class="strategy-details">
+                            <p>We're always looking for talented individuals to join our team. Check out our <a href="/career" class="cta-link">careers page</a> for current opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Mood Island Team. All rights reserved.
+               <a href="https://github.com/wanghaisheng/loveable-journey/tree/main" class="footer-link" target="_blank" rel="noopener noreferrer">
+                 View on GitHub <i class="fab fa-github github-icon"></i>
+               </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

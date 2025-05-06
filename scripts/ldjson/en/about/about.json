@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Our Team",
+  "description": "Learn about our small but passionate team building innovative web solutions",
+  "url": "https://loveablejourney.borninsea.com/about",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Mood Island Team",
+    "description": "A small, dedicated team passionate about creating innovative web solutions",
+    "foundingDate": "2023",
+    "url": "https://loveablejourney.borninsea.com",
+    "sameAs": [
+      "https://github.com/wanghaisheng/loveable-journey"
+    ]
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://loveablejourney.borninsea.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://loveablejourney.borninsea.com/about"
+      }
+    ]
+  },
+  "inLanguage": "en"
+} 
